@@ -139,3 +139,13 @@ def test_test_endpoint_needs_token(monkeypatch):
     assert client.post("/test", json=SAMPLE).status_code == 401
     r = client.post("/test", json=SAMPLE, headers={"X-Test-Token": "t"})
     assert r.status_code == 200 and r.get_json()["urgency"] == "high"
+
+
+def test_detention_outranks_appointment(monkeypatch):
+    ans = dict(GOOD_ANSWER, call_outcome="appointment_scheduled", subagent="live")
+    monkeypatch.setattr(extractor.requests, "post", lambda *a, **k: muse_ok(ans))
+    out = extractor.extract(SAMPLE["call"], api_key="k")
+    assert out["call_outcome"] == "detained_new"
+    client_ans = dict(GOOD_ANSWER, caller_type="client", call_outcome="client_other")
+    monkeypatch.setattr(extractor.requests, "post", lambda *a, **k: muse_ok(client_ans))
+    assert extractor.extract(SAMPLE["call"], api_key="k")["call_outcome"] == "detained"
