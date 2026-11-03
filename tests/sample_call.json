@@ -1,0 +1,15 @@
+{
+  "event": "call_ended",
+  "call": {
+    "call_id": "demo_call_0001",
+    "agent_id": "agent_demo",
+    "from_number": "+12145550188",
+    "to_number": "+14253505998",
+    "start_timestamp": 1793300000000,
+    "end_timestamp": 1793300312000,
+    "disconnection_reason": "agent_hangup",
+    "recording_url": "https://example.com/recordings/demo_call_0001.wav",
+    "collected_dynamic_variables": {"office_hours": "no", "name": "Mariana"},
+    "transcript": "Agent: ¡Hola! Le saluda Sofía, la asistente virtual de Bennett & Vega Immigration Law. Hello, this is Sofía, I can also help you in English. ¿Con quién tengo el gusto?\nUser: Hola, soy Mariana López.\nAgent: ¿Cómo se encuentra el día de hoy, Mariana?\nUser: La verdad muy preocupada.\nAgent: Lamento mucho escuchar eso. Aquí estamos para apoyarle en lo que necesite. ¿Cómo le puedo ayudar el día de hoy?\nUser: A mi esposo se lo llevó ICE ayer en la mañana, está en el centro de detención de Prairieland, y no sé qué hacer. Los vi en TikTok en el en vivo del jueves.\nAgent: Entiendo, usted está buscando ayuda porque su esposo fue detenido. Le pido que mantenga la calma, vamos a ayudarle. ¿Me puede decir el nombre completo de su esposo?\nUser: Jorge Ramírez Torres.\nAgent: Gracias. Cuando una persona está detenida, el caso requiere una consulta de emergencia. Primero hacemos una pre-evaluación y, después de hablar con un especialista, agendamos una cita con un abogado en menos de 24 horas. En este momento nuestra oficina está fuera de horario. ¿Prefiere que le llamemos lo antes posible el siguiente día hábil, o agendar una hora específica?\nUser: Una hora específica por favor, mañana temprano.\nAgent: ¿Me comparte su correo electrónico?\nUser: mariana.lopez@example.com\nAgent: Tengo disponible mañana martes a las 9:00 o a las 9:30 de la mañana, hora del centro. ¿Cuál le acomoda?\nUser: A las 9.\nAgent: Perfecto, mañana martes a las 9:00 de la mañana, hora del centro. ¿Lo confirmo?\nUser: Sí.\nAgent: Su cita quedó confirmada para mañana martes a las 9:00 de la mañana, hora del centro. Va a necesitar al menos 30 minutos en privado. ¿Hay algo más en lo que le podamos ayudar el día de hoy?\nUser: No, gracias.\nAgent: Gracias por llamar a Bennett & Vega Immigration Law. Le atendió Sofía, la asistente virtual; fue un placer atenderle."
+  }
+}
