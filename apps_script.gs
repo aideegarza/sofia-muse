@@ -3,7 +3,7 @@
 // SHEETS_TOKEN on the server. Deploy > New deployment > Web app,
 // Execute as: Me, Who has access: Anyone.
 
-const TOKEN = 'CAMBIA-ESTE-TOKEN';
+const TOKEN = 'CHANGE-THIS-TOKEN';
 const SHEET_NAME = 'Llamadas';
 
 function doPost(e) {
